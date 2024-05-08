@@ -72,7 +72,7 @@ def process_image(image_file, confidence_threshold):
     # Save the uploaded image to the specified directory
     
     saved_image_path = os.path.join(save_dir, image_file.name)
-    st.write("Hello")
+    st.write(saved_image_path)
     with open(saved_image_path, 'wb') as f:
         f.write(image_file.getbuffer())
     
