@@ -70,7 +70,7 @@ def process_image(image_file, confidence_threshold):
     save_dir = 'https://github.com/vishant2611/Arthropodsdetectionexecutable' 
    
     # Save the uploaded image to the specified directory
-    
+    st.write(image_file.name)
     saved_image_path = os.path.join(save_dir, image_file.name)
     st.write(saved_image_path)
     with open(saved_image_path, 'wb') as f:
