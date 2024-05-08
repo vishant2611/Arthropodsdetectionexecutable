@@ -65,7 +65,7 @@ def iou(boxA, boxB):
     return iou
 
 def process_image(image_file, confidence_threshold):
-       
+    st.write("Hello")   
     # Define the directory to save the uploaded image
     #save_dir = '/content/drive/MyDrive/Capstone_new/Data_New_images/'
     image = Image.open(image_file)
