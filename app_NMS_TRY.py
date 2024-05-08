@@ -8,7 +8,7 @@ import pandas as pd
 from PIL import Image as PILImage
 from torchvision.transforms.functional import to_pil_image
 from numpy import asarray
-#from sahi.utils.yolov8 import download_yolov8n_model
+from sahi.utils.yolov8 import download_yolov8n_model
 from sahi import AutoDetectionModel
 from sahi.utils.cv import read_image
 from sahi.predict import get_prediction, get_sliced_prediction, predict, visualize_object_predictions
