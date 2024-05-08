@@ -69,6 +69,7 @@ def process_image(image_file, confidence_threshold):
     # Define the directory to save the uploaded image
     #save_dir = '/content/drive/MyDrive/Capstone_new/Data_New_images/'
     image = Image.open(image_file)
+    st.write(image) 
     saved_image_path = save_image_to_repo(image, image_file.name)
     st.write(saved_image_path)
     
