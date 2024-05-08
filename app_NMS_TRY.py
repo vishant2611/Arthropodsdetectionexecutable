@@ -232,10 +232,6 @@ if (confidence_threshold > 0.05 and confidence_threshold < 1.00) and (iou_thresh
               st.error("The uploaded file is too large. Please upload an image smaller than 5MB.")
           else:
               with st.spinner(text='In progress'):
-                save_dir = 'https://github.com/vishant2611/Arthropodsdetectionexecutable/'
-                saved_image_path = os.path.join(save_dir, image_file.name)
-                with open(saved_image_path, 'wb') as f:
-                f.write(image_file.getbuffer())
                 process_image(image_file=my_upload,confidence_threshold=confidence_threshold)
               with st.spinner(text='In progress'):
                   time.sleep(3)
