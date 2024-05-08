@@ -12,7 +12,7 @@ from sahi.utils.yolov8 import download_yolov8n_model
 from sahi import AutoDetectionModel
 from sahi.utils.cv import read_image
 from sahi.predict import get_prediction, get_sliced_prediction, predict, visualize_object_predictions
-from IPython.display import Image as IPythonImage
+#from IPython.display import Image as IPythonImage
 
 st.set_page_config(layout="wide", page_title="Arthropods Detection APP")
 
