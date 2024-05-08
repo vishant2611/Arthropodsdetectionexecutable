@@ -67,7 +67,7 @@ def iou(boxA, boxB):
 def process_image(image_file, confidence_threshold):
        
     # Define the directory to save the uploaded image
-    save_dir = '/content/drive/MyDrive/Capstone_new/Data_New_images/'
+    save_dir = 'https://github.com/vishant2611/Arthropodsdetectionexecutable/'
     
     
     # Save the uploaded image to the specified directory
