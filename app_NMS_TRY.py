@@ -67,7 +67,7 @@ def iou(boxA, boxB):
 def process_image(image_file, confidence_threshold):
        
     # Define the directory to save the uploaded image
-    save_dir = 'https://github.com/vishant2611/Arthropodsdetectionexecutable/'
+    save_dir = 'https://raw.github.com/vishant2611/Arthropodsdetectionexecutable/Main'
     
     
     # Save the uploaded image to the specified directory
