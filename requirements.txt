@@ -1,6 +1,9 @@
 opencv-python-headless
 streamlit
 torch
+sahi
 torchvision
 numpy
 pillow
+yolov8
+ultralytics
