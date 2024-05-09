@@ -188,7 +188,7 @@ confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.05, 0.95, 0.0
 iou_threshold = st.sidebar.slider("IoU Threshold", 0.1, 0.9, 0.1, 0.1, key="iou_slider")
 
 
-# ************************Condition start******************************
+# ************************Button Condition start******************************
 
 
 if st.button('Detect Arthropods'):
@@ -239,6 +239,8 @@ col = f'''<style>
     </style>'''
 
 ColorSlider = st.markdown(col, unsafe_allow_html=True)
+
+# ************************Slidder Condition start******************************
 
 if (confidence_threshold > 0.05 and confidence_threshold < 1.00) and (iou_threshold>0 and iou_threshold<1.00):
 
