@@ -6,7 +6,7 @@ import os
 from PIL import Image
 from collections import Counter
 import pandas as pd
-from PIL import Image as PILImage
+#from PIL import Image as PILImage
 from torchvision.transforms.functional import to_pil_image
 from numpy import asarray
 from sahi.utils.yolov8 import download_yolov8n_model
