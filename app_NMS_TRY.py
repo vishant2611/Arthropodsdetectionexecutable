@@ -6,14 +6,14 @@ import os
 from PIL import Image
 from collections import Counter
 import pandas as pd
-from PIL import Image as PILImage
+#from PIL import Image as PILImage
 from torchvision.transforms.functional import to_pil_image
 from numpy import asarray
 from sahi.utils.yolov8 import download_yolov8n_model
 from sahi import AutoDetectionModel
 from sahi.utils.cv import read_image
 from sahi.predict import get_prediction, get_sliced_prediction, predict, visualize_object_predictions
-from IPython.display import Image as IPythonImage
+#from IPython.display import Image as IPythonImage
 import urllib.request
 import numpy as np
 
@@ -188,7 +188,7 @@ confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.05, 0.95, 0.0
 iou_threshold = st.sidebar.slider("IoU Threshold", 0.1, 0.9, 0.1, 0.1, key="iou_slider")
 
 
-# ************************Condition start******************************
+# ************************Button Condition start******************************
 
 
 if st.button('Detect Arthropods'):
@@ -239,6 +239,8 @@ col = f'''<style>
     </style>'''
 
 ColorSlider = st.markdown(col, unsafe_allow_html=True)
+
+# ************************Slidder Condition start******************************
 
 if (confidence_threshold > 0.05 and confidence_threshold < 1.00) and (iou_threshold>0 and iou_threshold<1.00):
 
