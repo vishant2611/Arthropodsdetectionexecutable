@@ -3,7 +3,10 @@ streamlit
 torch
 sahi
 torchvision
-numpy
 pillow
 yolov8
 ultralytics
+pyrebase4
+numpy
+pandas
+
