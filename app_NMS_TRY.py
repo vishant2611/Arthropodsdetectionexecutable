@@ -144,7 +144,7 @@ def process_image(image_file, confidence_threshold):
   _, result_image_bytes = cv2.imencode('.jpg', image)
 
   # Upload the result image bytes to Firebase Storage
-  img_name = confidence_threshold+image_file.name
+  img_name = str(confidence_threshold)+image_file.name
   st.write(img_name)
     
   storage.child("result_with_nms.jpg"+image_file.name).put(result_image_bytes.tobytes())
