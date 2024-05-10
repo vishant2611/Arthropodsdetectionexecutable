@@ -255,7 +255,7 @@ ColorSlider = st.markdown(col, unsafe_allow_html=True)
 
 # ************************Slidder Condition start******************************
 
-if (confidence_threshold > 0.05 and confidence_threshold < 1.00): #and (iou_threshold>0 and iou_threshold<1.00):
+if (confidence_threshold > 0.05 and confidence_threshold < 1.00) and (iou_threshold>0 and iou_threshold<1.00):
 
     if my_upload is not None:
           if my_upload.size > MAX_FILE_SIZE:
