@@ -198,6 +198,7 @@ my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpe
 
 confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.05, 0.95, 0.05, 0.05,key="confidence_slider")
 #iou_threshold = st.sidebar.slider("IoU Threshold", 0.1, 0.9, 0.1, 0.1, key="iou_slider")
+iou_threshold=0.10
 
 
 # ************************Button Condition start******************************
