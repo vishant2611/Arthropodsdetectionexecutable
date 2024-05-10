@@ -145,12 +145,10 @@ def process_image(image_file, confidence_threshold):
 
   # Upload the result image bytes to Firebase Storage
   img_name = str(confidence_threshold)+image_file.name
-  st.write(img_name)
-    
-  storage.child("result_with_nms.jpg"+image_file.name).put(result_image_bytes.tobytes())
+  storage.child("result_with_nms.jpg"+img_name).put(result_image_bytes.tobytes())
 
   # Get the URL of the result image
-  result_image_url = storage.child("result_with_nms.jpg"+image_file.name).get_url(None)
+  result_image_url = storage.child("result_with_nms.jpg"+img_name).get_url(None)
   
   #Table creation
   object_prediction_list = result.object_prediction_list
@@ -200,8 +198,8 @@ col1, col2, col3 = st.columns(3)
 my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
 confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.05, 0.95, 0.05, 0.05,key="confidence_slider")
-#iou_threshold = st.sidebar.slider("IoU Threshold", 0.1, 0.9, 0.1, 0.1, key="iou_slider")
-iou_threshold=0.10
+iou_threshold = st.sidebar.slider("IoU Threshold", 0.1, 0.9, 0.1, 0.1, key="iou_slider")
+#iou_threshold=0.10
 
 
 # ************************Button Condition start******************************
