@@ -184,7 +184,7 @@ def process_image(image_file, confidence_threshold):
   col1.image(image_url)
   col2.write("## Class Counts")
   col2.write(df.set_index('Abbreviation', drop=True))
-  col3.write("Detected Image")
+  col3.write("Detected Image :bug:")
   col3.image(result_image_url)
 
 
