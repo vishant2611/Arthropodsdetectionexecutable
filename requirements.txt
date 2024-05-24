@@ -9,4 +9,3 @@ ultralytics
 pyrebase4
 numpy
 pandas
-
