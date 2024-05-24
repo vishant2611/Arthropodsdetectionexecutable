@@ -1,7 +1,7 @@
 import pyrebase
 import streamlit as st
 import time 
-import cv2
+#import cv2
 import os
 from PIL import Image
 from collections import Counter
